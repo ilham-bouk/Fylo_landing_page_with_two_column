@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+h1, h2 {
+    font-family: "Raleway", sans-serif;
+}
+h1, h2 {
+    font-size: 36px
+}
+p {
+    font-size: 16px;
+}
+input {
+    padding: 10px 120px 10px 20px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    font-size: 13px;
+}
+input::placeholder {
+    color: hsl(0, 0%, 75%);
+}
+button {
+    background-color: hsl(224, 93%, 58%);
+    padding: 11px 50px;
+    font-size: 13px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover {
+    background-color: #529CFE;
+    box-shadow: 2px 2px 7px #bbbbbb;
+}
+header .main-nav, header .container, main article, main aside, footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 375px) {
+    input {
+        margin: 10px 0 20px 0 !important;
+    }
+    button {
+        width: 295px;
+    }
+}
+
+header {
+    padding: 60px 70px 110px;
+}
+header .main-nav ul {
+    display: flex;
+    gap: 50px;
+}
+header .main-nav ul a {
+    color: black;
+}
+header .container {
+    padding-top: 90px;
+}
+header .container .text {
+    width: 530px;
+    line-height: 1.4;
+}
+header .container .text form input {
+    margin-right: 10px;
+}
+header .container img {
+    width: 650px;
+}
+@media (max-width: 375px) {
+    header {
+        padding: 20px 20px 50px;
+    }
+    header .main-nav img {
+        width: 90px;
+    }
+    header .main-nav ul {
+        gap: 18px;
+    }
+    header .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    header .container .text {
+        width: 330px;
+    }
+    header .container .text h1 {
+        font-size: 26px;
+    }
+    header .container img {
+        width: 330px;
+    }
+}
+
+
+main {
+    padding-top: 110px;
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+}
+main article {
+    background-color: hsl(240, 75%, 98.43%);
+    padding: 50px 70px 110px;
+}
+main article .text {
+    line-height: 1.4;
+}
+main article .text > p {
+    width: 520px;
+}
+main article .text a {
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+main article .text a:hover {
+    opacity: 0.6;
+}
+main article .text a i {
+    font-size: 12px;
+}
+main article .text .quote {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px #e9e9e9;
+    margin-top: 40px;
+    padding: 30px;
+    width: 400px;
+}
+main article .text .quote > img {
+    width: 20px;
+}
+main article .text .quote p {
+    margin-top: 10px;
+}
+main article .text .quote .info {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+main article .text .quote .info img {
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+main article .text .quote .info div span:first-of-type {
+    font-weight: bold;
+    display: block;
+}
+main article .text + img {
+    width: 650px;
+}
+main aside {
+    padding: 100px 70px;
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+}
+main aside .text h3 {
+    font-size: 30px;
+}
+main aside .text p {
+    width: 510px;
+    line-height: 1.4;
+}
+main aside form {
+    display: grid;
+    gap: 20px;
+}
+main aside form input {
+    padding: 15px 300px 15px 20px;
+    box-shadow: 1px 1px 10px #525252;
+}
+main aside form button {
+    width: fit-content;
+    padding: 13px 30px;
+    box-shadow: 1px 1px 10px #525252;
+}
+main aside form button:hover {
+    box-shadow: 1px 1px 10px #525252 !important;
+}
+@media (max-width: 375px) {
+    main {
+        background-image: url(../images/bg-curve-mobile.svg);
+        padding-top: 50px;
+    }
+    main article {
+        flex-direction: column-reverse;
+        padding: 30px 15px 50px;
+        align-items: normal;
+    }
+    main article .text h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    main article .text p {
+        width: fit-content;
+    }
+    main article .text + img {
+        width: 300px;
+        margin: auto;
+    }
+    main article .text a {
+        margin-top: 20px;
+    }
+    main article .text .quote {
+        width: fit-content;
+        margin: 50px 14px;
+    }
+    main aside {
+        flex-direction: column;
+        padding: 80px 50px;
+    }
+    main aside .text {
+        text-align: center;
+    }
+    main aside .text h3 {
+        margin: auto;
+        font-size: 20px;
+    }
+    main aside .text p {
+        width: 320px;
+    }
+    main aside form input {
+        padding-right: 50px;
+    }
+    main aside form button {
+        margin-top: -25px;
+        width: auto;
+    }
+}
+
+footer {
+    padding: 80px 250px 60px 70px;
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    line-height: 2.2;
+}
+footer .container {
+    align-items: normal;
+}
+footer .container .info img {
+    margin-right: 20px;
+}
+footer .container .links li {
+    width: fit-content;
+}
+footer .container .links li:hover {
+    color: #529CFE;
+    cursor: pointer;
+}
+footer .container .social i {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    margin-right: 10px;
+    margin-top: 16px;
+}
+footer .container .social i:hover {
+    color: #529CFE;
+    border: 1px solid #529CFE;
+}
+@media (max-width: 375px) {
+    footer {
+        padding: 70px 40px;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container .social {
+        margin: auto;
+    }
+}
